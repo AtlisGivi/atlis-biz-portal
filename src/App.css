@@ -1,0 +1,368 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #990000;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.carousel {
+    margin-top: -80px; /* KILL ME */
+    height: auto; /* 440px / auto */
+    max-height: 646px;
+    position: relative;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    border: 0px;
+}
+
+.igallery {
+    margin-top: -60px;
+    width: 100%;
+    height: 566px;
+}
+
+
+.TrendingStyle {
+    /*background-color: #FFFFFF;*/
+    background-color: #FFFFFF;
+    -webkit-transition-duration: 0.4s;
+}
+
+.TrendingStyle:hover {
+    background-color: #F4F7FA;
+}
+
+
+.JoinStyle {
+    background-color: #FF684D;
+    color: #FFFFFF;
+    -webkit-transition-duration: 0.4s;
+}
+
+.JoinStyle:hover {
+    background-color: #FFFFFF;
+    color: #FF684D;
+}
+
+.ClaimStyle {
+    /*background-color: #FFFFFF;*/
+    color: #FFFFFF;
+    -webkit-transition-duration: 0.4s;
+}
+
+.ClaimStyle:hover {
+    background-color: #FFFFFF;
+    color: #FF684D;
+}
+
+.ReplyButton {
+    background-color: #FFFFFF;
+    color: #000000;
+    -webkit-transition-duration: 0.4s;
+}
+
+.ReplyButton:hover {
+    background-color: #FF684D;
+    color: #FFFFFF;
+}
+
+
+.SearchButton {
+    background-color: #FFFFFF;
+    color: #FF684D;
+    -webkit-transition-duration: 0.4s;
+}
+
+.SearchButton:hover {
+    background-color: #316BA1;
+    color: #FFFFFF;
+}
+
+.AskButtonStatic {
+    background-color: #FF684D;
+}
+
+
+.AskButton {
+    background-color: #FF684D;
+    -webkit-transition-duration: 0.4s;
+}
+
+.AskButton:hover {
+    background-color: #316BA1;
+}
+
+.AskButtonUnselected {
+    background-color: #FFFFFF;
+}
+
+.DownloadButton {
+    background-color: #d8d8d8
+;
+    -webkit-transition-duration: 0.4s;
+}
+
+.DownloadButton:hover {
+    background-color: #FF684D;
+}
+
+
+
+/*.AskButtonImage:hover {*/
+/*background-color: #FF684D;*/
+
+/*animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;*/
+/*transform: translate3d(0, 0, 0);*/
+/*backface-visibility: hidden;*/
+/*perspective: 1000px;*/
+/*}*/
+
+/*@keyframes shake {*/
+/*10%, 90% {*/
+/*transform: translate3d(-1px, 0, 0);*/
+/*}*/
+
+/*20%, 80% {*/
+/*transform: translate3d(2px, 0, 0);*/
+/*}*/
+
+/*30%, 50%, 70% {*/
+/*transform: translate3d(-4px, 0, 0);*/
+/*}*/
+
+/*40%, 60% {*/
+/*transform: translate3d(4px, 0, 0);*/
+/*}*/
+/*}*/
+
+.AskButtonImage {
+}
+
+.AskButtonImage:hover {
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: 2;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.base-appear {
+    transform: translateY(-200px);
+    opacity: 0;
+}
+
+.base-appear.base-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 250ms ease-in, opacity 250ms ease-in;
+}
+
+.response-appear {
+    transform: translateY(-24px);
+    opacity: 0.1;
+}
+
+.response-appear.response-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 200ms ease-in, opacity 200ms ease-in;
+}
+
+/*.fade-appear {*/
+/*opacity: 0.01;*/
+/*}*/
+/*.fade-appear.fade-appear-active {*/
+/*opacity: 1;*/
+/*transition: opacity 400ms ease-in;*/
+/*}*/
+
+.BPButton {
+    -webkit-animation: faded 0.4s ease-in;
+}
+
+.SearchLayout {
+    -webkit-animation: scaling 0.3s ease-in;
+}
+
+.WrapperSearchLayout {
+    -webkit-animation: faded 0.3s ease-in;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    100% {
+        transform: scaleY(1.0);
+        transform-origin: top;
+    }
+}
+
+@-webkit-keyframes faded {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-appear {
+    opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.responseSlide-appear {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.responseSlide-appear.responseSlide-appear-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 200ms ease-in, opacity 200ms ease-in;
+}
+
+input.SearchBoxInnerPlaceholderFocused::-webkit-input-placeholder{
+    color: #C5C5C5;
+}
+
+input.SearchBoxPlaceholder::-webkit-input-placeholder{
+    color: #FFAC90;
+}
+
+input.SearchBoxPlaceholderFocused::-webkit-input-placeholder{
+    color: #FFFFFF;
+}
+
+input.ask::-webkit-input-placeholder{
+    color: #BBBBBB;
+    /*outline: #FF684D solid 1px;*/
+}
+
+input.recommend::-webkit-input-placeholder{
+    color: #BBBBBB;
+    /*outline: #FF684D solid 1px;*/
+}
+
+input.ask {
+    outline: #F0F0F0 solid 1px;
+    background-color: #FFF;
+    caret-color: #FF684D;
+}
+
+
+input.ask:focus {
+    outline: #FF684D solid 2px;
+    background-color: #F4F7FA;
+}
+
+textarea.ask::-webkit-input-placeholder{
+    color: #BBBBBB;
+    /*outline: #FF684D solid 1px;*/
+}
+
+
+textarea.ask {
+    outline: #F0F0F0 solid 1px;
+    background-color: #FFF;
+    caret-color: #FF684D;
+}
+
+
+textarea.ask:focus {
+    outline: #FF684D solid 2px;
+    background-color: #F4F7FA;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFF;
+}
+
+@-webkit-keyframes typing {
+    0%{ width: 0;}
+    10%{ width: 0;}
+    90% {width: 100%;}
+    100% {width: 100%;}
+}
+/*@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }*/
+
+.AskTextAnimation {
+    width: inherit;
+    color: black;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 3.6s steps(60, end) infinite alternate;
+    /*blink-caret .5s step-end infinite alternate;*/
+}
+
+#trendingdiv::-webkit-scrollbar {
+    display: none;
+}
+
+
+.commentsFade:after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: calc(-38% - 8px);
+    left: 51%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+    width: 24%;
+    height: 36px;
+}
+
+.trendingCategoriesFade:after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to right, rgba(107,126,149,0), rgba(107,126,149, 1) 90%);
+    width: 1.8em;
+    height: 36px;
+}
+
+.floatingTrendingCategoriesFade:after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+    width: 1.8em;
+    height: 36px;
+}
+
